@@ -1,9 +1,13 @@
-import { useState } from "react";
-
+import { StyledLinksApp } from './setup/styled-components/styled_component';
+import GlobalStyle from './setup/styled-components/GlobalStyle';
 function App() {
-        const [count, setCount] = useState(0);
 
-        return <div className='App'>navigation app inside main</div>;
+        return (
+                <>
+                <GlobalStyle />
+                <StyledLinksApp>links</StyledLinksApp>
+             </>
+        )
 }
 
 export default App;
