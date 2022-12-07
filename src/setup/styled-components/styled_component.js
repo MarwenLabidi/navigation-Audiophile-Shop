@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
 export const StyledLinksApp = styled.section`
-        padding: 10px;
+        /* padding: 10px; */
         & .cardOne {
-		position:relative;
+                position: relative;
                 /* background-color: red; */
                 width: 300px;
                 height: 200px;
@@ -12,9 +12,9 @@ export const StyledLinksApp = styled.section`
                 margin-top: 20px;
                 & .cardOne__img {
                         background-color: var(--color-gray-300);
-			border-radius:10px;
-			position:relative;
-			top:50px;
+                        border-radius: 10px;
+                        position: relative;
+                        top: 50px;
 
                         width: 100%;
                         height: 150px;
@@ -23,39 +23,38 @@ export const StyledLinksApp = styled.section`
                                 height: 120px;
                                 object-fit: contain;
                                 margin: auto;
-				position:relative;
-				top:-50px;
+                                position: relative;
+                                top: -50px;
                         }
                 }
                 & .cardOne__container {
-			position:relative;
-			z-index: 111111;
-			top:-20px;
+                        position: relative;
+                        z-index: 111111;
+                        top: -20px;
                         & .cardOne__container__text {
-				text-align:center;
-				
+                                text-align: center;
                         }
                         & .shop_section {
                                 display: flex;
                                 align-items: center;
                                 gap: 10px;
                                 object-fit: contain;
-				justify-content:center;
-				& .cardOne__container__text__description:hover{
-					color:var(--color-secondary);
-					transition: all 0.3s ease-in-out;
-				}
+                                justify-content: center;
                         }
                 }
-		&:hover{
-			cursor:pointer;
-		}
-		${({ isBrowser }) =>
-                isBrowser &&
-                css`
-                        margin:0 ;
-
-                `}
+                &:hover {
+                        cursor: pointer;
+                }
+                ${({ isBrowser }) =>
+                        isBrowser &&
+                        css`
+                                margin: 0;
+                        `}
+			/* //TODO? COLOR THE TEST WHEN  OU HOVER ON THE CARD */
+                &:hover 	& .cardOne__container__text__description {
+                        color: var(--color-secondary);
+                        transition: all 0.3s ease-in-out;
+                }
         }
 
         ${({ isBrowser }) =>
@@ -63,7 +62,6 @@ export const StyledLinksApp = styled.section`
                 css`
                         display: flex;
                         justify-content: center;
-			gap:50px;
-
+                        gap: 50px;
                 `}
 `;
