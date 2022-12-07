@@ -5,6 +5,9 @@ export const StyledLinksApp = styled.section`
 	margin-top: 20px;
 	& .cardOne{
 		background-color: red;
+		width: 200px;
+		height:200px;
+		margin:auto;
 	}
         & .shop_section {
                 display: flex;
