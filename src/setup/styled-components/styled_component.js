@@ -40,12 +40,22 @@ export const StyledLinksApp = styled.section`
                                 align-items: center;
                                 gap: 10px;
                                 object-fit: contain;
-				justify-content:center
+				justify-content:center;
+				& .cardOne__container__text__description:hover{
+					color:var(--color-secondary);
+					transition: all 0.3s ease-in-out;
+				}
                         }
                 }
 		&:hover{
 			cursor:pointer;
 		}
+		${({ isBrowser }) =>
+                isBrowser &&
+                css`
+                        margin:0 ;
+
+                `}
         }
 
         ${({ isBrowser }) =>
@@ -53,5 +63,7 @@ export const StyledLinksApp = styled.section`
                 css`
                         display: flex;
                         justify-content: center;
+			gap:50px;
+
                 `}
 `;
