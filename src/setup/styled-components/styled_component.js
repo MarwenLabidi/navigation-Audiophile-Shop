@@ -6,13 +6,13 @@ export const StyledLinksApp = styled.section`
                 position: relative;
                 /* background-color: red; */
                 width: 300px;
-                height: 200px;
+                height: 185px;
                 margin: 0 auto;
                 /* padding: 10px; */
                 margin-top: 20px;
                 & .cardOne__img {
                         background-color: var(--color-gray-300);
-                        border-radius: 10px;
+                        border-radius: 5px;
                         position: relative;
                         top: 50px;
 
@@ -50,10 +50,12 @@ export const StyledLinksApp = styled.section`
                         css`
                                 margin: 0;
                         `}
-			/* //TODO? COLOR THE TEST WHEN  OU HOVER ON THE CARD */
-                &:hover 	& .cardOne__container__text__description {
-                        color: var(--color-secondary);
+			/* //TODO COLOR THE TEST WHEN  OU HOVER ON THE CARD */
+                &:hover{ 	
+			& .cardOne__container__text__description {
+			color: var(--color-secondary);
                         transition: all 0.3s ease-in-out;
+		}
                 }
         }
 
