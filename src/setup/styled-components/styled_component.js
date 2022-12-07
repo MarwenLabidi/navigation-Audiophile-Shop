@@ -26,6 +26,9 @@ export const StyledLinksApp = styled.section`
                                 position: relative;
                                 top: -50px;
                         }
+			
+			transition: all 0.3s ease-in-out;
+
                 }
                 & .cardOne__container {
                         position: relative;
@@ -51,11 +54,17 @@ export const StyledLinksApp = styled.section`
                                 margin: 0;
                         `}
 			/* //TODO COLOR THE TEST WHEN  OU HOVER ON THE CARD */
-                &:hover{ 	
-			& .cardOne__container__text__description {
+                &:hover,&:focus{ 	
+			border:none;
+			outline:none;			& .cardOne__container__text__description {
 			color: var(--color-secondary);
                         transition: all 0.3s ease-in-out;
+			
 		}
+		& .cardOne__img {
+				border: 3px dotted var(--color-secondary);
+
+			}
                 }
         }
 

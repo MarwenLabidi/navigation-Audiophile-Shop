@@ -7,7 +7,7 @@ function App() {
                 <>
                         <GlobalStyle />
                         <StyledLinksApp isBrowser={isBrowser}>
-                                <section className='cardOne'>
+                                <section className='cardOne' tabIndex={0}>
                                         <div className='cardOne__img'>
                                                 <img src="/images/image-headphones.png" alt="headphoneImage"  />
                                         </div>
@@ -36,7 +36,7 @@ function App() {
                                                 </div>
                                         </div>
                                 </section>
-                                <section className='cardOne'>
+                                <section className='cardOne'tabIndex={0}>
                                         <div className='cardOne__img'>
                                                 <img src="/images/image-speakers.png" alt="speakersmage"  />
                                         </div>
@@ -65,7 +65,7 @@ function App() {
                                                 </div>
                                         </div>
                                 </section>
-                                <section className='cardOne'>
+                                <section className='cardOne'tabIndex={0}>
                                         <div className='cardOne__img'>
                                                 <img src="/images/image-earphones.png" alt="earphonesImage"  />
                                         </div>
